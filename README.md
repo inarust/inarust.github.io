@@ -14,10 +14,11 @@ fn main() {
    cargo --version
    rustup update
    ```
-3. Buat proyek baru dengan cargo dan masuk ke direktori tersebut
+3. Buat proyek baru dengan cargo dan masuk ke direktori tersebut, init untuk eksisting direktori dan new untuk buat direktori baru
    ```sh
-   cargo new main
-   cd main
+   cargo init inarust
+   cargo new inarust
+   cd inarust
    code .
    ```
 4. Jalankan program atau build dengan perintah :
