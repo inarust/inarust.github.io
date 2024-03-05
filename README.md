@@ -36,7 +36,7 @@ serde_json = "1.0.68"
 tokio = { version = "1.0", features = ["full"] }
 ```
 
-setelah itu build
+Setiap ada package baru yang di tambahkan di dependensi selalu jalankan cargo build
 
 ```sh
 cargo build
