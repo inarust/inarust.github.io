@@ -28,3 +28,12 @@ fn main() {
 
 ## Web Service dengan Axum
 
+Edit file CArgo.toml tambahkan pada bagian dependencies
+```toml
+. . .
+[dependencies]
+axum = {version = "0.6.20", features = ["headers"]}
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.68"
+tokio = { version = "1.0", features = ["full"] }
+```
