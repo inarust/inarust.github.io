@@ -1,3 +1,7 @@
 # Indonesia Rust | Komunitas Pecinta ~Inara Rusli~ Rust
 
-Panduan Pemrograman Rust Bahasa Indonesia
+```rs
+fn main() {
+    println!("Panduan Pemrograman Rust Bahasa Indonesia");
+}
+```
