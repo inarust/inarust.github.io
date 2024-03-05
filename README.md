@@ -1,5 +1,5 @@
 # Indonesia Rust | Komunitas Pecinta Rust
-Komunitas Pecinta ~Inara Rusli~ Rust
+Komunitas Pecinta <del>Inara Rusli</del> Rust
 ```rs
 fn main() {
     println!("Panduan Pemrograman Rust Bahasa Indonesia");
