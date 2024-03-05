@@ -23,8 +23,13 @@ fn main() {
    ```
 4. Jalankan program atau build dengan perintah :
    ```sh
-   cargo run
    cargo build
+   cargo run
+   ```
+5. Untuk membersihkan dan update dependensi dengan perintah :
+   ```sh
+   cargo clean
+   cargo update
    ```
 
 ## Web Service dengan Axum
