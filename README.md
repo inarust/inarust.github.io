@@ -17,5 +17,8 @@ fn main() {
    cd main
    code .
    ```
-5. Jalankan program dengan perintah : cargo run
+5. Jalankan program dengan perintah : cargo run  
+   ![image](https://github.com/inarust/inarust.github.io/assets/11188109/4435ef61-9272-4564-a127-afc19def107a)
+
+## Web Service dengan Axum
 
