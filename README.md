@@ -49,3 +49,13 @@ curl -X DELETE http://localhost:3000/delete-user/2
 
 ```
 
+## Setting Compiler
+
+gcc dan g++ compiler bisa menggunakan alternatif [Winlibs](https://winlibs.com/)
+
+Menggunakan rustup
+```sh
+rustup show
+```
+
+
