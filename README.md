@@ -51,11 +51,18 @@ curl -X DELETE http://localhost:3000/delete-user/2
 
 ## Setting Compiler
 
-gcc dan g++ compiler bisa menggunakan alternatif [Winlibs](https://winlibs.com/)
+Persiapan :
+1. Install Visual Studio Community 2022
+2. gcc dan g++ compiler bisa menggunakan alternatif [Winlibs](https://winlibs.com/)
+3. Pilih yang (with POSIX threads) + LLVM/Clang/LLD/LLDB + MinGW-w64 (UCRT) - release (LATEST)
+4. Pilih Win64 Zip Archive
+5. 
 
 Menggunakan rustup
 ```sh
 rustup show
+rustup default stable-x86_64-unknown-linux-gnu
+
 ```
 
 
