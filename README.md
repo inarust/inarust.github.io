@@ -61,8 +61,14 @@ Persiapan :
 Menggunakan rustup
 ```sh
 rustup show
-rustup default stable-x86_64-unknown-linux-gnu
-
+rustup toolchain install stable-x86_64-pc-windows-msvc
+rustup default stable-x86_64-pc-windows-gnu
 ```
+custom linker toolchain
+```sh
+rustup toolchain link my-toolchain ~/rust/build/x86_64-unknown-linux-gnu/stage2/
+rustup default my-toolchain
+```
+
 
 
