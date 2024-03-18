@@ -75,5 +75,8 @@ Untuk kompilasi dengan support CUDA di windows harus sudah instalasi MSVC dahulu
 ```env
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\Hostx64\x64
 ```
+![image](https://github.com/inarust/inarust.github.io/assets/11188109/d5e16ee3-a331-46fd-aba6-6d86f602486f)  
+
+![image](https://github.com/inarust/inarust.github.io/assets/11188109/8cfa439d-866f-4077-aeaf-1b4881144c9b)  
 
 
