@@ -71,6 +71,9 @@ custom linker toolchain
 rustup toolchain link my-toolchain ~/rust/build/x86_64-unknown-linux-gnu/stage2/
 rustup default my-toolchain
 ```
-
+Untuk kompilasi dengan support CUDA di windows harus sudah instalasi MSVC dahulu dan masukkan ke dalam path di env
+```env
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\Hostx64\x64
+```
 
 
