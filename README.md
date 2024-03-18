@@ -81,15 +81,7 @@ Jika anda menemui error seperti berikut:
 error: linking with `link.exe` failed: exit code: 1181
 = note: LINK : fatal error LNK1181: cannot open input file 'gdi32.lib'
 ```
-Solusinya jika di MSVC dengan melakukan install Windows 11 SDK, akan tetapi jika ruang harddisk anda habis, bisa menggunakan toolchain GNU sebagai berikut:
-
-Persiapan :
-1. gcc dan g++ compiler bisa menggunakan alternatif [Winlibs](https://winlibs.com/)
-2. Pilih yang (with POSIX threads) + LLVM/Clang/LLD/LLDB + MinGW-w64 (UCRT) - release (LATEST)
-3. Pilih Win64 Zip Archive
-4. Gunakan rustup untuk berpindah 
-
-Menggunakan rustup
+Solusinya jika di MSVC dengan melakukan install Windows 11 SDK, akan tetapi jika ruang harddisk anda habis, bisa menggunakan toolchain GNU. Caranya masuk ke CMD dengan perintah rustup sebagai berikut:
 ```sh
 rustup show
 rustup toolchain install stable-x86_64-pc-windows-gnu
@@ -98,13 +90,21 @@ rustup set default-host x86_64-pc-windows-gnu
 rustup toolchain uninstall stable-x86_64-pc-windows-msvc
 ```
 
-override
+### Tanpa instalasi Visual Studio
+
+Bagi anda yang tidak mau untuk melakukan instalasi Visual Studio karena alasan space harddisk yang habis, alternatifnya menggunakan winlibs. Persiapan :
+1. gcc dan g++ compiler bisa menggunakan alternatif [Winlibs](https://winlibs.com/)
+2. Pilih yang (with POSIX threads) + LLVM/Clang/LLD/LLDB + MinGW-w64 (UCRT) - release (LATEST)
+3. Pilih Win64 Zip Archive
+4. Pindahkan folder nya ke C dan masukkan ke dalam sistem path
+
+Perintah tambahan apabila dibutuhkan override
 ```sh
 rustup override unset
 rustup override set nightly
 ```
 
-custom linker toolchain
+Perintah tambahan apabila dibutuhkan custom linker toolchain
 ```sh
 rustup toolchain link my-toolchain ~/rust/build/x86_64-unknown-linux-gnu/stage2/
 rustup default my-toolchain
