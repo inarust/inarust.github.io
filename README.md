@@ -64,10 +64,7 @@ Persiapan :
    ```env
    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\Hostx64\x64
    ```
-   
-
-   
-4. Pilih instasi CUDA versi>12
+4. Pilih instasi [CUDA Toolkit versi diatas 12](https://developer.nvidia.com/cuda-toolkit)
 
 ## stable-x86_64-pc-windows-gnu
 
