@@ -76,6 +76,13 @@ Persiapan :
 
 ## stable-x86_64-pc-windows-gnu
 
+Jika anda menemui error seperti berikut:
+```sh
+error: linking with `link.exe` failed: exit code: 1181
+= note: LINK : fatal error LNK1181: cannot open input file 'gdi32.lib'
+```
+Solusinya jika di MSVC dengan melakukan install Windows 11 SDK, akan tetapi jika ruang harddisk anda habis, bisa menggunakan toolchain GNU sebagai berikut:
+
 Persiapan :
 1. gcc dan g++ compiler bisa menggunakan alternatif [Winlibs](https://winlibs.com/)
 2. Pilih yang (with POSIX threads) + LLVM/Clang/LLD/LLDB + MinGW-w64 (UCRT) - release (LATEST)
