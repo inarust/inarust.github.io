@@ -69,6 +69,10 @@ Persiapan :
    ```env
    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4
    ```
+6. Pastikan di env system path sudah ada variabel berikut
+   ![image](https://github.com/inarust/inarust.github.io/assets/11188109/0d152055-5d2f-4266-838c-6ce105dddea9)  
+7. Pastikan instalasi dengan menjalankan perintah di CMD: nvcc --version
+
 
 ## stable-x86_64-pc-windows-gnu
 
