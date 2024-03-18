@@ -65,7 +65,10 @@ Persiapan :
    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\Hostx64\x64
    ```
 4. Pilih instasi [CUDA Toolkit versi diatas 12](https://developer.nvidia.com/cuda-toolkit)
-5. Unduh [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) sesuai dengan versi CUDA
+5. Unduh [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) sesuai dengan versi CUDA, kemudian ekstrak ke dalam folder instalasi cuda
+   ```env
+   C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4
+   ```
 
 ## stable-x86_64-pc-windows-gnu
 
