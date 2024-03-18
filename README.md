@@ -61,8 +61,10 @@ Persiapan :
 Menggunakan rustup
 ```sh
 rustup show
-rustup toolchain install stable-x86_64-pc-windows-msvc
+rustup toolchain install stable-x86_64-pc-windows-gnu
 rustup default stable-x86_64-pc-windows-gnu
+rustup set default-host x86_64-pc-windows-gnu
+rustup toolchain uninstall stable-x86_64-pc-windows-msvc
 ```
 custom linker toolchain
 ```sh
