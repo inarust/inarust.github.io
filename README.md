@@ -100,6 +100,8 @@ Bagi anda yang tidak mau untuk melakukan instalasi Visual Studio karena alasan s
 
 Harap diingat untuk cara ini bisa dilakukan jika anda tidak berencana untuk menggunakan CUDA dalam komputasi program anda.
 
+### Lainnya
+
 Perintah tambahan apabila dibutuhkan override
 ```sh
 rustup override unset
