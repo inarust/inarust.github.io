@@ -102,6 +102,9 @@ Harap diingat untuk cara ini bisa dilakukan jika anda tidak berencana untuk meng
 
 ### Lainnya
 
+Setup RUSTFLAGS untuk memaksimalkan fitur dari ekstensi set CPU anda  
+![image](https://github.com/inarust/inarust.github.io/assets/11188109/7c095d04-33ff-4859-968a-8e5e6e4befce)  
+
 Perintah tambahan apabila dibutuhkan override
 ```sh
 rustup override unset
