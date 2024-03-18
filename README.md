@@ -51,12 +51,28 @@ curl -X DELETE http://localhost:3000/delete-user/2
 
 ## Setting Compiler
 
+Ada dua jenis toolchain untuk kompilasi rust di windows yaitu tipe MSCV dan GNU
+
+### stable-x86_64-pc-windows-msvc
+
 Persiapan :
 1. Install Visual Studio Community 2022
-2. gcc dan g++ compiler bisa menggunakan alternatif [Winlibs](https://winlibs.com/)
-3. Pilih yang (with POSIX threads) + LLVM/Clang/LLD/LLDB + MinGW-w64 (UCRT) - release (LATEST)
-4. Pilih Win64 Zip Archive
-5. 
+2. Untuk kompilasi dengan support CUDA di windows harus sudah instalasi MSVC dahulu dan masukkan ke dalam path di env
+   ```env
+   C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\Hostx64\x64
+   ```
+   ![image](https://github.com/inarust/inarust.github.io/assets/11188109/d5e16ee3-a331-46fd-aba6-6d86f602486f)  
+
+   ![image](https://github.com/inarust/inarust.github.io/assets/11188109/8cfa439d-866f-4077-aeaf-1b4881144c9b)
+3. Pilih instasi CUDA versi>12
+
+## stable-x86_64-pc-windows-gnu
+
+Persiapan :
+1. gcc dan g++ compiler bisa menggunakan alternatif [Winlibs](https://winlibs.com/)
+2. Pilih yang (with POSIX threads) + LLVM/Clang/LLD/LLDB + MinGW-w64 (UCRT) - release (LATEST)
+3. Pilih Win64 Zip Archive
+4. Gunakan rustup untuk berpindah 
 
 Menggunakan rustup
 ```sh
@@ -66,22 +82,15 @@ rustup default stable-x86_64-pc-windows-gnu
 rustup set default-host x86_64-pc-windows-gnu
 rustup toolchain uninstall stable-x86_64-pc-windows-msvc
 ```
-custom linker toolchain
-```sh
-rustup toolchain link my-toolchain ~/rust/build/x86_64-unknown-linux-gnu/stage2/
-rustup default my-toolchain
-```
-Untuk kompilasi dengan support CUDA di windows harus sudah instalasi MSVC dahulu dan masukkan ke dalam path di env
-```env
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\Hostx64\x64
-```
-![image](https://github.com/inarust/inarust.github.io/assets/11188109/d5e16ee3-a331-46fd-aba6-6d86f602486f)  
-
-![image](https://github.com/inarust/inarust.github.io/assets/11188109/8cfa439d-866f-4077-aeaf-1b4881144c9b)  
-
 
 override
 ```sh
 rustup override unset
 rustup override set nightly
+```
+
+custom linker toolchain
+```sh
+rustup toolchain link my-toolchain ~/rust/build/x86_64-unknown-linux-gnu/stage2/
+rustup default my-toolchain
 ```
