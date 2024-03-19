@@ -98,7 +98,7 @@ Bagi anda yang tidak mau untuk melakukan instalasi Visual Studio karena alasan s
 3. Pilih Win64 Zip Archive
 4. Pindahkan folder nya ke C dan masukkan ke dalam sistem path
 
-Harap diingat untuk cara ini bisa dilakukan jika anda tidak berencana untuk menggunakan CUDA dalam komputasi program anda.
+Harap diingat jika anda berencana untuk menggunakan CUDA dalam komputasi program anda, maka tetap melakukan instalasi MSVC windows + CRT dari Visual Studio Installer.
 
 ### Lainnya
 
