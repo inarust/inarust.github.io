@@ -14,19 +14,25 @@ fn main() {
    cargo --version
    rustup update
    ```
-3. Buat proyek baru dengan cargo dan masuk ke direktori tersebut, init untuk eksisting direktori dan new untuk buat direktori baru
+3. Buat proyek baru dengan cargo dan masuk ke direktori tersebut, cargo new berfungsi untuk buat direktori baru
    ```sh
-   cargo init inarust
    cargo new inarust
    cd inarust
    code .
    ```
-4. Jalankan program atau build dengan perintah :
+   Jika anda melakukan clone dari repository maka gunakan perintah cargo init
+   ```sh
+   git clone git@github.com:inarust/inarust
+   cargo init inarust
+   cd inarust
+   code .
+   ```
+5. Jalankan program atau build dengan perintah :
    ```sh
    cargo build
    cargo run
    ```
-5. Untuk membersihkan dan update dependensi dengan perintah :
+6. Untuk membersihkan dan update dependensi dengan perintah :
    ```sh
    cargo clean
    cargo update
