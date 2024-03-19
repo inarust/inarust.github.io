@@ -108,6 +108,8 @@ RUSTFLAGS=-C target-feature=+sse,+sse2,+sse3,+ssse3,+sse4.1,+sse4.2,+avx,+f16c,+
 ```
 ![image](https://github.com/inarust/inarust.github.io/assets/11188109/7c095d04-33ff-4859-968a-8e5e6e4befce)  
 
+F16C/CVT16 is supported by AMD “Piledriver”, Intel “Ivy Bridge”, and later processors.
+
 Perintah tambahan apabila dibutuhkan override
 ```sh
 rustup override unset
